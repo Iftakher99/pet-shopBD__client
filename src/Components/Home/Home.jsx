@@ -7,6 +7,7 @@ import AdoptionSteps from './AdoptionSteps/AdoptionSteps';
 import PetNews from './PetNews/PetNews';
 import Faq from './Faq/Faq';
 import Stats from './Stats/Stats';
+import AppCard from './AppCard/AppCard';
 const Home = (props) => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = (props) => {
       <Faq />
       <Stats />
       <PlanningToAdoptAPet />
+      <AppCard />
     </>
   );
 };

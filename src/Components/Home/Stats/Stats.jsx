@@ -23,7 +23,7 @@ const Stats = () => {
   console.log(items);
 
   return (
-    <div className="my-20 ">
+    <div className="container mx-auto my-20 overflow-hidden">
       <h2 className="text-4xl text-center font-semibold ">
         <p className="text-primaryBold"> {items[1]?.count} </p>
         <span className="text-secondary "> lives touched and counting!</span>

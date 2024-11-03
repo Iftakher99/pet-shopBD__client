@@ -12,14 +12,14 @@ const Carousel = ({ items }) => {
       autoplay: 10,
       animationDuration: 3500,
       animationTimingFunc: 'linear',
-      perView: 4,
+      perView: 6,
       breakpoints: {
         1024: {
-          perView: 3,
+          perView: 4,
         },
         640: {
-          perView: 2,
-          gap: 36,
+          perView: 3,
+          gap: 26,
         },
       },
     }).mount();
