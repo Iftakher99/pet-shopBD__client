@@ -4,7 +4,7 @@ import Card from './Card';
 const PlanningToAdoptAPet = () => {
   return (
     <section className="py-10 px-6 bg-gradient-to-b from-[#e8eaff] to-[#c3c7f5]">
-      <h3 className="text-3xl font-bold text-[#2e2b85] w-full my-6 text-center">
+      <h3 className="text-3xl font-bold text-[#3c3988] w-full my-6 text-center">
         Thinking of Adopting a Pet?
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

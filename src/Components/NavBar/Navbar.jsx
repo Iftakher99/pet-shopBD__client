@@ -4,7 +4,7 @@ import logo from './images/logo.png';
 const Navbar = () => {
   return (
     <>
-      <div className=" navbar bg-[#C5C0EA] text-[#0b0a2e] font-bold">
+      <div className="navbar bg-[#C5C0EA] text-[#0b0a2e] font-bold">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow  bg-violet-700"
+              className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow  bg-primaryBold"
             >
               <li>
                 <Link to="/">Home</Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link to="/">
             <div className="flex md:ml-7 justify-center items-center">
               <img
-                className=" h-12 w-12 md:h-16 md:w-16"
+                className="ml-10 md:ml-0 h-12 w-12 md:h-16 md:w-16"
                 src={logo}
                 alt="PetShopBD"
               />
