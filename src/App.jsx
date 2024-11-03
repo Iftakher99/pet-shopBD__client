@@ -7,6 +7,8 @@ import AdoptForm from './Components/AdoptForm/AdoptForm';
 import AdminLogin from './Components/AdminPanel/AdminLogin';
 import './App.css';
 import Layout from './Components/Layout';
+import AdoptPage from './Components/Services/AdoptPage';
+import PostPetPage from './Components/Services/PostPetPage';
 
 const App = () => {
   return (
@@ -25,6 +27,22 @@ const App = () => {
           element={
             <Layout>
               <Services />
+            </Layout>
+          }
+        />{' '}
+        <Route
+          path="/adopt"
+          element={
+            <Layout>
+              <AdoptPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/rehome"
+          element={
+            <Layout>
+              <PostPetPage />
             </Layout>
           }
         />

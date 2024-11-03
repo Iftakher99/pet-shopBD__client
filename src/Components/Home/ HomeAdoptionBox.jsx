@@ -8,7 +8,7 @@ const HomeAdoptionBox = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-3  grid-cols-1   mb-10 rounded-lg text-white gap-4 w-full bg-gradient-to-r from-[#15B392] to-[#73EC8B]">
+    <div className="grid md:grid-cols-3  grid-cols-1   mb-10 rounded-lg text-white gap-4 w-full bg-gradient-to-r from-primary to-primaryLight">
       <div className="left text-justify    p-10  mx-auto">
         <div className="flex gap-4 mb-2">
           <h1 className="text-4xl font-semibold"> Adoption</h1>

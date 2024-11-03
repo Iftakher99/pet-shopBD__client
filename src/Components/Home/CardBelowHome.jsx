@@ -15,7 +15,7 @@ const formatNumber = (number) => {
 const CardBelowHome = () => {
   const adoptedPets = formatNumber(3182);
   return (
-    <div className="bg-gradient-to-l from-[#15B392] to-[#73EC8B] rounded-xl flex  flex-col md:flex-row justify-between items-center h-auto md:h-72 w-auto ">
+    <div className="bg-gradient-to-l mt-16 from-[#C5C0EA] to-[#9a92db] rounded-xl flex  flex-col md:flex-row justify-between items-center h-auto md:h-72 w-auto ">
       <div className="flex  justify-around items-center md:w-1/2 p-6">
         <div className=" md:h-auto md:w-36 ml-6">
           <img src={HomeDarkCardLeftPic} alt="Dog with toy" />
