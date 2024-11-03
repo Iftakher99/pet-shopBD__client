@@ -18,7 +18,7 @@ const PetsViewer = (props) => {
     <div className="pet-view-card">
       <div className="pet-card-pic">
         <img
-          src={`http://localhost:4000/images/${props.pet.filename}`}
+          src={`https://pet-shopbd-server.onrender.com/images/${props.pet.filename}`}
           alt={props.pet.name}
         />
       </div>

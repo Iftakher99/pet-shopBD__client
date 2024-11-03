@@ -18,7 +18,7 @@ const FormCard = (props) => {
     setIsApproving(true);
     try {
       const response = await fetch(
-        `http://localhost:4000/approving/${props.form.petId}`,
+        `https://pet-shopbd-server.onrender.com/approving/${props.form.petId}`,
         {
           method: 'PUT',
           body: JSON.stringify({
@@ -47,7 +47,7 @@ const FormCard = (props) => {
   const deleteFormAdoptedPet = async () => {
     try {
       const deleteResponse = await fetch(
-        `http://localhost:4000/form/delete/many/${props.form.petId}`,
+        `https://pet-shopbd-server.onrender.com/form/delete/many/${props.form.petId}`,
         {
           method: 'DELETE',
         },
@@ -65,7 +65,7 @@ const FormCard = (props) => {
     setIsDeleting(true);
     try {
       const response = await fetch(
-        `http://localhost:4000/form/reject/${props.form._id}`,
+        `https://pet-shopbd-server.onrender.com/form/reject/${props.form._id}`,
         {
           method: 'DELETE',
         },

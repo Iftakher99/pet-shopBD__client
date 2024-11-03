@@ -82,10 +82,13 @@ const PostPetSection = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:4000/services', {
-        method: 'POST',
-        body: formData,
-      });
+      const response = await fetch(
+        'https://pet-shopbd-server.onrender.com/services',
+        {
+          method: 'POST',
+          body: formData,
+        },
+      );
 
       if (!response.ok) {
         throw new Error('Network response was not ok');

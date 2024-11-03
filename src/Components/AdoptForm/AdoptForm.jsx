@@ -40,20 +40,23 @@ function AdoptForm(props) {
     try {
       setIsSubmitting(true);
 
-      const response = await fetch('http://localhost:4000/form/save', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const response = await fetch(
+        'https://pet-shopbd-server.onrender.com/form/save',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            phoneNo,
+            livingSituation,
+            previousExperience,
+            familyComposition,
+            petId: props.pet._id,
+          }),
         },
-        body: JSON.stringify({
-          email,
-          phoneNo,
-          livingSituation,
-          previousExperience,
-          familyComposition,
-          petId: props.pet._id,
-        }),
-      });
+      );
 
       if (!response.ok) {
         setErrPopup(true);
@@ -85,7 +88,7 @@ function AdoptForm(props) {
         <div className="pet-details">
           <div className="pet-pic">
             <img
-              src={`http://localhost:4000/images/${props.pet.filename}`}
+              src={`https://pet-shopbd-server.onrender.com/images/${props.pet.filename}`}
               alt={props.pet.name}
             />
           </div>

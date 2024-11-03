@@ -27,7 +27,7 @@ const PetCards = (props) => {
     setIsApproving(true);
     try {
       const response = await fetch(
-        `http://localhost:4000/approving/${props.pet._id}`,
+        `https://pet-shopbd-server.onrender.com/approving/${props.pet._id}`,
         {
           method: 'PUT',
           body: JSON.stringify({
@@ -55,7 +55,7 @@ const PetCards = (props) => {
     setIsDeleting(true);
     try {
       const deleteResponses = await fetch(
-        `http://localhost:4000/form/delete/many/${props.pet._id}`,
+        `https://pet-shopbd-server.onrender.com/form/delete/many/${props.pet._id}`,
         {
           method: 'DELETE',
         },
@@ -72,7 +72,7 @@ const PetCards = (props) => {
   const handleReject = async () => {
     try {
       const response = await fetch(
-        `http://localhost:4000/delete/${props.pet._id}`,
+        `https://pet-shopbd-server.onrender.com/delete/${props.pet._id}`,
         {
           method: 'DELETE',
         },
@@ -97,7 +97,7 @@ const PetCards = (props) => {
       <div className="pet-view-card">
         <div className="pet-card-pic">
           <img
-            src={`http://localhost:4000/images/${props.pet.filename}`}
+            src={`https://pet-shopbd-server.onrender.com/images/${props.pet.filename}`}
             alt={props.pet.name}
           />
         </div>

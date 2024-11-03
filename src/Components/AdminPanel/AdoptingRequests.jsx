@@ -11,7 +11,9 @@ const AdoptingRequests = () => {
 
   const fetchForms = async () => {
     try {
-      const response = await fetch('http://localhost:4000/form/getForms');
+      const response = await fetch(
+        'https://pet-shopbd-server.onrender.com/form/getForms',
+      );
       if (!response.ok) {
         throw new Error('An error occurred');
       }
@@ -26,7 +28,9 @@ const AdoptingRequests = () => {
 
   const fetchPets = async () => {
     try {
-      const response = await fetch('http://localhost:4000/approvedPets');
+      const response = await fetch(
+        'https://pet-shopbd-server.onrender.com/approvedPets',
+      );
       if (!response.ok) {
         throw new Error('An error occurred');
       }
@@ -123,7 +127,7 @@ const AdoptingRequests = () => {
             <div className="pet-view-card">
               <div className="pet-card-pic">
                 <img
-                  src={`http://localhost:4000/images/${selectedPet.filename}`}
+                  src={`https://pet-shopbd-server.onrender.com/images/${selectedPet.filename}`}
                   alt={selectedPet.name}
                 />
               </div>
