@@ -260,9 +260,9 @@
 }
 
 .pet-card-pic img {
-  width: 310px;
+  /* width: 310px;
   height: 180px;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 .pet-card-details p {

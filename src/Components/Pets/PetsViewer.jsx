@@ -16,13 +16,14 @@ const PetsViewer = (props) => {
 
   return (
     <div className="pet-view-card flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="pet-card-pic">
+      <div className="pet-card-pics">
         <img
           src={`https://pet-shopbd-server.onrender.com/images/${props.pet.filename}`}
           alt={props.pet.name}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover md:h-56 lg:h-64"
         />
       </div>
+
       <div className="pet-card-details p-4 flex-grow">
         <h2 className="text-xl font-bold">{props.pet.name}</h2>
         <p>
