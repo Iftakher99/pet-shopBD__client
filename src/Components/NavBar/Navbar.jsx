@@ -46,9 +46,9 @@ const Navbar = () => {
               <img
                 className="ml-10 md:ml-0 h-12 w-12 md:h-16 md:w-16"
                 src={logo}
-                alt="PetShopBD"
+                alt="PetAdoptionBD"
               />
-              <span className="btn btn-ghost text-xl">Pet Shop BD</span>
+              <span className="btn btn-ghost text-xl">Pet Adoption BD</span>
             </div>
           </Link>
         </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end md:mr-16">
           <Link to="/services">
-            <button className="btn bg-yellow-400">Give a Pet</button>
+            <button className="btn bg-secondary text-white">Give a Pet</button>
           </Link>
         </div>
       </div>
