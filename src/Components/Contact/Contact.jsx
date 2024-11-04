@@ -48,13 +48,13 @@ const Contact = () => {
       </div>
 
       {/* Profile Image */}
-      <div className="w-full md:w-1/2 mb-10">
+      {/* <div className="w-full md:w-1/2 mb-10">
         <img
           src={developerPng}
           alt="Profile"
           className="w-full max-w-xs rounded-lg shadow-lg"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
