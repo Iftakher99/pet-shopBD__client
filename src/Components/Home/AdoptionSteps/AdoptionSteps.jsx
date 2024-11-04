@@ -8,7 +8,7 @@ import right from './images/Right.svg';
 const AdoptionSteps = () => {
   return (
     <Container className="mt-20 text-center mb-10 px-4">
-      <h2 className="text-3xl font-semibold">Adopt or Rehome a pet in just</h2>
+      <h2 className="text-3xl font-semibold">Adopt or Rehome a Pet in Just</h2>
       <p className="text-secondary font-medium text-xl mb-16">3 Easy Steps</p>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-10">
@@ -22,7 +22,7 @@ const AdoptionSteps = () => {
               <img src={group} alt="Step 1" className="w-16 h-16" />
             </div>
             <p className="text-center text-gray-700 font-medium">
-              Set up your profile (including photos) in minutes
+              Fill out the form to adopt or rehome a pet with your details.
             </p>
           </div>
         </div>
@@ -46,8 +46,7 @@ const AdoptionSteps = () => {
               <img src={homework} alt="Step 2" className="w-16 h-16" />
             </div>
             <p className="text-center text-gray-700 font-medium">
-              Describe your home and routine so rehomers can see if its right
-              for their pet
+              The admin will review your form and make a decision.
             </p>
           </div>
         </div>
@@ -71,7 +70,7 @@ const AdoptionSteps = () => {
               <img src={clipboard} alt="Step 3" className="w-16 h-16" />
             </div>
             <p className="text-center text-gray-700 font-medium">
-              Start your search! Set up your profile (including photos)
+              Receive confirmation and welcome your new pet or rehome yours!
             </p>
           </div>
         </div>

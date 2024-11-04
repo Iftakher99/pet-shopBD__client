@@ -9,6 +9,8 @@ import './App.css';
 import Layout from './Components/Layout';
 import AdoptPage from './Components/Services/AdoptPage';
 import PostPetPage from './Components/Services/PostPetPage';
+import FaqAdopter from './Components/Faq/FaqAdopter';
+import FaqRehomer from './Components/Faq/Faqrehomer';
 
 const App = () => {
   return (
@@ -43,6 +45,22 @@ const App = () => {
           element={
             <Layout>
               <PostPetPage />
+            </Layout>
+          }
+        />{' '}
+        <Route
+          path="/faq-adopter"
+          element={
+            <Layout>
+              <FaqAdopter />
+            </Layout>
+          }
+        />{' '}
+        <Route
+          path="/faq-rehomer"
+          element={
+            <Layout>
+              <FaqRehomer />
             </Layout>
           }
         />

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import footPrint from './images/footprint2.png';
 import holdingHand from './images/holdingHand.png';
+import Button from '../UI/Button';
 
 const HomeAdoptionBox = () => {
   const scrollToTop = () => {
@@ -26,38 +27,13 @@ const HomeAdoptionBox = () => {
       </div>
       <div className="">
         <div className="flex h-full justify-around items-center gap-2">
-          <div className="">
-            <Link to="./pets">
-              <button
-                className="btn bg-[#D2FF72] hover:bg-yellow-400 text-black  sm:btn-sm md:btn-md lg:btn-lg"
-                onClick={scrollToTop}
-              >
-                <div className="flex">
-                  <p>Adopt </p>
-                  <img
-                    className="w-4  h-4 md:w-6 md:h-6  ml-1"
-                    src={footPrint}
-                    alt="footprint"
-                  />
-                </div>
-              </button>
+          <div className="flex justify-around items-center mt-8 w-full gap-6">
+            <Link to="adopt">
+              <Button primary>Adopt me</Button>
             </Link>
-          </div>
-          <div className="">
-            <Link to="./services">
-              <button
-                className="btn bg-[#D2FF72] hover:bg-yellow-400 text-black  sm:btn-sm md:btn-md lg:btn-lg"
-                onClick={scrollToTop}
-              >
-                <div className="flex">
-                  <p>Donate </p>
-                  <img
-                    className="w-4  h-4 md:w-6 md:h-6  ml-1"
-                    src={footPrint}
-                    alt="footprint"
-                  />
-                </div>
-              </button>
+
+            <Link to="rehome">
+              <Button secondary>Rehome Now</Button>
             </Link>
           </div>
         </div>

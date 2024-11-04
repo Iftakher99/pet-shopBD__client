@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import faqImg from './image/question_answer.png';
 
 const Faq = () => {
@@ -7,43 +8,48 @@ const Faq = () => {
         Frequently Asked Questions
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 lg:gap-12">
-        <div className="overflow-hidden rounded border pt-10 bg-white text-slate-500 shadow-md shadow-slate-200 transition-transform transform hover:scale-105">
-          <div className="flex justify-center mt-4">
-            <img
-              src={faqImg}
-              alt="FAQ for Pet Adopters"
-              className="h-24 w-24 object-contain"
-            />
+        <Link to="faq-adopter">
+          <div className="overflow-hidden rounded border pt-10 bg-white text-slate-500 shadow-md shadow-slate-200 transition-transform transform hover:scale-105">
+            <div className="flex justify-center mt-4">
+              <img
+                src={faqImg}
+                alt="FAQ for Pet Adopters"
+                className="h-24 w-24 object-contain"
+              />
+            </div>
+            <div className="p-12 text-center">
+              <h3 className="mb-4 text-xl font-medium text-primary">
+                FAQ&apos;s for Pet Adopters
+              </h3>
+              <p>
+                If you are thinking about adopting a pet, we know you&apos;ll
+                have lots of things to consider. Click here to see some of the
+                most frequently asked questions.
+              </p>
+            </div>
           </div>
-          <div className="p-12 text-center">
-            <h3 className="mb-4 text-xl font-medium text-primary">
-              FAQ&apos;s for Pet Adopters
-            </h3>
-            <p>
-              If you are thinking about adopting a pet, we know you&apos;ll have
-              lots of things to consider. Click here to see some of the most
-              frequently asked questions.
-            </p>
+        </Link>
+
+        <Link to="faq-rehomer">
+          <div className="overflow-hidden rounded border pt-10 bg-white text-slate-500 shadow-md shadow-slate-200 transition-transform transform hover:scale-105">
+            <div className="flex justify-center mt-4">
+              <img
+                src={faqImg}
+                alt="FAQ for Pet Adopters"
+                className="h-24 w-24 object-contain"
+              />
+            </div>
+            <div className="p-12 text-center">
+              <h3 className="mb-4 text-xl font-medium text-primary">
+                FAQ&apos;s for Pet Rehomers
+              </h3>
+              <p>
+                Finding a new home for your pet doesn&apos;t need to be a
+                daunting task.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="overflow-hidden rounded border pt-10 bg-white text-slate-500 shadow-md shadow-slate-200 transition-transform transform hover:scale-105">
-          <div className="flex justify-center mt-4">
-            <img
-              src={faqImg}
-              alt="FAQ for Pet Adopters"
-              className="h-24 w-24 object-contain"
-            />
-          </div>
-          <div className="p-12 text-center">
-            <h3 className="mb-4 text-xl font-medium text-primary">
-              FAQ&apos;s for Pet Rehomers
-            </h3>
-            <p>
-              Finding a new home for your pet doesn&apos;t need to be a daunting
-              task.
-            </p>
-          </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
